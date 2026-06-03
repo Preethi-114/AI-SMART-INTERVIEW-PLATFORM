@@ -1,0 +1,301 @@
+/* shared-styles.css - Add this to your global CSS or create a separate file */
+
+/* Consistent Card Styles */
+.consistent-card {
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.2s ease !important;
+  background: white !important;
+}
+
+.consistent-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Consistent Header Styles */
+.consistent-header {
+  padding: 24px 24px 16px 24px !important;
+  background: white !important;
+  border-bottom: 1px solid #eef2f6 !important;
+}
+
+.consistent-header h1 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  margin: 0 !important;
+}
+
+.consistent-header p {
+  font-size: 14px !important;
+  color: #64748b !important;
+  margin: 4px 0 0 0 !important;
+}
+
+/* Consistent Stats Card */
+.consistent-stats-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.consistent-stats-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.consistent-stats-icon.primary { background: #eef2ff; color: #4f46e5; }
+.consistent-stats-icon.success { background: #e8f5e9; color: #2e7d32; }
+.consistent-stats-icon.warning { background: #fff3e0; color: #f57c00; }
+.consistent-stats-icon.info { background: #e1f5fe; color: #0288d1; }
+.consistent-stats-icon.danger { background: #ffebee; color: #d32f2f; }
+.consistent-stats-icon.secondary { background: #f3f4f6; color: #4b5563; }
+
+.consistent-stats-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.consistent-stats-content p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 4px 0 0 0;
+}
+
+/* Consistent Table Styles */
+.consistent-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.consistent-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.consistent-table thead th {
+  background: #f8fafc;
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.consistent-table tbody td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eef2f6;
+  color: #334155;
+  font-size: 14px;
+}
+
+.consistent-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.consistent-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Consistent Badge Styles */
+.consistent-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.consistent-badge.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.consistent-badge.warning {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.consistent-badge.info {
+  background: #e1f5fe;
+  color: #0288d1;
+}
+
+.consistent-badge.secondary {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* Consistent Button Styles */
+.consistent-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.consistent-btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.consistent-btn-primary:hover {
+  background: #4338ca;
+}
+
+.consistent-btn-outline {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.consistent-btn-outline:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Consistent Filter Bar */
+.consistent-filter-bar {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+}
+
+/* Consistent Modal */
+.consistent-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+}
+
+.consistent-modal {
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.consistent-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eef2f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consistent-modal-header h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.consistent-modal-body {
+  padding: 24px;
+}
+
+.consistent-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #eef2f6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Form Styles */
+.consistent-form-group {
+  margin-bottom: 20px;
+}
+
+.consistent-form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.consistent-form-control {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.consistent-form-control:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Consistent Pagination */
+.consistent-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.consistent-page-item {
+  padding: 8px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  color: #475569;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.consistent-page-item:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.consistent-page-item.active {
+  background: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}

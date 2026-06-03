@@ -1,0 +1,154 @@
+/* Header Component Styles */
+.interview-header {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.interview-header .container-fluid {
+  padding: 0 1.5rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #fff, #667eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.brand .badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.75rem;
+  align-self: flex-start;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease;
+  z-index: 1001;
+  display: none;
+}
+
+.profile-dropdown.show {
+  display: block !important;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 1.5rem !important;
+}
+
+.dropdown-body {
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+  background: #f7fafc;
+  color: #2d3748;
+  border-left-color: #667eea;
+  padding-left: 1.75rem;
+}
+
+.dropdown-divider {
+  margin: 0;
+  border-color: #e2e8f0;
+}
+
+.dropdown-footer {
+  background: #f8fafc;
+  border-radius: 0 0 12px 12px;
+  padding: 1.5rem !important;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.profile-avatar img {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar img:hover {
+  border-color: #667eea;
+  transform: scale(1.05);
+}
+
+.profile-avatar-lg img {
+  border: 3px solid #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* User Info */
+.user-info .badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-dropdown {
+    width: 280px;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    left: 15px;
+    margin: 0 auto;
+  }
+  
+  .brand h2 {
+    font-size: 1.25rem;
+  }
+  
+  .d-md-block {
+    display: none !important;
+  }
+  
+  .interview-header .container-fluid {
+    padding: 0 1rem;
+  }
+}
